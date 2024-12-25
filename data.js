@@ -23,20 +23,4 @@ const projects = [
     codeURL: "https://github.com/WebCoder346/calculator/",
     demoURL: "https://webcoder346.github.io/calculator/",
   },
-  {
-    img: "project1.jpeg",
-    title: "Snake Game",
-    date: "2 December 2023",
-    description: "A currency converter tool that you can use to convert currency more than 50 currencies.",
-    codeURL: "https://github.com/WebCoder346/snakeGame/",
-    demoURL: "https://webcoder346.github.io/snakeGame/",
-  },
-  {
-    img: "project1.jpeg",
-    title: "Weather App",
-    date: "2 December 2023",
-    description: "A currency converter tool that you can use to convert currency more than 50 currencies.",
-    codeURL: "https://github.com/WebCoder346/weather/",
-    demoURL: "https://webcoder346.github.io/weather/",
-  },
 ]
