@@ -560,8 +560,19 @@ footer i {
   .form h1{
     font-size: 1.5rem;
   }
+  .form{
+    max-width: 95%;
+  }
+  
+  .languageBox{
+    max-width: 97%;
+  }
+  
   .projectsSection{
     padding-bottom: 0;
+  }
+  .projectBox{
+    margin: 0 0 2rem 0;
   }
   footer{
     font-size: 0.8rem;
