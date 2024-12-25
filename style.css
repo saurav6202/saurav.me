@@ -377,8 +377,7 @@ nav button {
   border: 1px solid #43434338;
   box-shadow: 0 0 15px #43434338, 0 0 20px #434343B0;
   background-color: #1212127D;
-  min-width: 15rem;
-  max-width: 50rem;
+  max-width: 40rem;
   padding: 1rem 2rem 2rem 2rem;
   margin: 4rem;
   position: relative;
@@ -453,7 +452,7 @@ textarea {
 footer {
   background-color: #121212;
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
