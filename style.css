@@ -561,7 +561,7 @@ footer i {
     font-size: 1.5rem;
   }
   .form{
-    max-width: 95%;
+    width: 95%;
   }
   
   .languageBox{
