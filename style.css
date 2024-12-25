@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", serif;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #11111A;
+  /* background: linear-gradient(to bottom right,#11111A , #1B0038 10%,#14253D, #050D18); */
+  z-index: -1;
+
+}
+
+.body {
+
+  background: linear-gradient(to bottom right, #1B0038 5%, #14253D, #050D18);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1D1D1F;
+  background: #01017DE6;
+  height: 4rem;
+  width: 100vw;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  /* background: linear-gradient(to top right, #1B0038, #3F0182,#123E7B, #14253D); */
+  background: #1B0038;
+
+  /* background: linear-gradient(to top right, #14253D, #050D18 10%); */
+
+}
+
+nav .homeA {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+nav button {
+  background: none;
+  border: 2px solid #7B00FF;
+  border-radius: 0.8rem;
+  color: #7B00FF;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content {
+  padding-top: 5rem;
+
+}
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+  /* margin-top: 2rem; */
+  /* border: 2px solid red; */
+  height: 25rem;
+  padding-left: 2rem;
+
+}
+
+.aboutSection .left {
+  width: 50%;
+  /* border: 2px solid red; */
+
+}
+
+.aboutSection .left h1 {
+  /* width: 13rem; */
+  font-size: 2.5rem;
+}
+
+.aboutSection .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.aboutSection .right .imgBox img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(0, 122, 255, 0.6);
+  /* Blue glow */
+  box-shadow: 0 0 30px #2C4E7E, 0 0 35px #14253D;
+
+  /* animation: pulse 5s ease-in-out infinite; */
+  transition: transform 0.5s ease;
+
+}
+
+.aboutSection .right .imgBox img:hover {
+  transform: translateY(-15px);
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 15px rgba(0, 122, 255, 0.6);
+    box-shadow: 0 0 15px #14253D;
+    /* Light blue */
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(0, 122, 255, 0.9);
+    box-shadow: 0 0 30px #2C4E7E, 0 0 35px #14253D;
+    /* Intense blue */
+  }
+}
+
+.aboutSection .right .imgBox .loader1 {
+  background: #7B00FF;
+  z-index: -991;
+  height: 18rem;
+  width: 18.6rem;
+  border-radius: 50%;
+  position: absolute;
+  animation: round 1.5s linear infinite;
+  border: 2px solid red;
+}
+
+.aboutSection .right .loader2 {
+  /* border-bottom: 0.5rem solid #470093; */
+  /* border-color: #7B00FF; */
+  height: 18.6rem;
+  width: 17rem;
+  border-radius: 50%;
+  background: #470093;
+  z-index: -4;
+  position: absolute;
+  animation: round 1.5s linear infinite;
+  border: 2px solid red;
+}
+
+.aboutSection .right .loader3 {
+  /* border-color: #7B00FF; */
+  /* border-top: 0.5rem solid #6000C5; */
+  height: 18rem;
+  width: 18.7rem;
+  border-radius: 50%;
+  background: #6000C5;
+  z-index: -3;
+  position: absolute;
+  transform: rotate(-16deg);
+  animation: round 1s linear infinite;
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes round2 {
+  0% {
+    transform: rotate(-16deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.skillsSection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: linear-gradient(to top right, #1B0038 10%, #14253D, #050D18); */
+
+}
+
+.languageBox {
+  margin-top: 4rem;
+  width: 30rem;
+  padding: 1rem 0;
+  /* border: 1px solid grey; */
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 15px #060021D4, 0 0 20px #06002199;
+
+  /* background: #0E0E18; */
+}
+
+.iconBoxCon {
+  /* border: 2px solid red; */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.languageBox .iconBox {
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  height: 3rem;
+  /* width: 8rem; */
+  margin: 0.5rem;
+}
+
+.languageBox .iconBox img {
+  height: 2rem;
+  width: 2rem;
+  /* margin: 1rem; */
+}
+
+.projectsSection {
+  /* background: linear-gradient(to bottom right, #1B0038 5%, #14253D, #050D18); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.projectCon {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectBox {
+  /* height: rem; */
+  width: 22rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 2rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0600213B;
+  box-shadow: 0 0 15px #060021D4, 0 0 20px #06002199;
+}
+
+.projectBox div {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.projectBox img {
+  height: 10rem;
+  width: 18rem;
+  border-radius: 0.8rem;
+
+}
+
+.projectBox .titleBox {
+  /* border: 1px solid red; */
+}
+
+.projectBox .titleBox p {
+  color: #C5C5C5;
+  font-size: 0.7rem;
+
+}
+
+.projectBox .infoBox {
+  font-size: 0.8rem;
+  /* 
+  border: 2px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+.projectBox .lngBox {
+  display: flex;
+  font-size: 0.8rem;
+  /* width: 17rem; */
+  flex-wrap: wrap;
+  /* border: 1px solid green; */
+
+}
+
+.projectBox .lngBox p {
+  font-size: 0.7rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: #7B00FF3B;
+}
+
+.projectBox .btnBox {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  /* width: 17rem; */
+}
+
+.projectBox .btnBox button {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 1rem;
+  border: 1px solid #7B00FF;
+  background: #4A0A904A;
+}
+
+.projectBox .btnBox button:hover {
+  color: #fff;
+  border-color: #777;
+  /* Slightly lighter border on hover */
+  box-shadow: 0 0 15px #EBEAED45;
+  /* Subtle dark glow */
+}
+
+.contactSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  border-radius: 1rem;
+  border: 1px solid #43434338;
+  box-shadow: 0 0 15px #43434338, 0 0 20px #434343B0;
+  background-color: #1212127D;
+  min-width: 15rem;
+  max-width: 50rem;
+  padding: 1rem 2rem 2rem 2rem;
+  margin: 4rem;
+  position: relative;
+  /* display:; */
+}
+
+.form h1 {
+  margin-bottom: 1rem;
+}
+
+.form input,
+textarea {
+  /* height: 2rem; */
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0.9rem;
+  background-color: #12121247;
+  border: 1px solid #444444;
+}
+
+.form textarea {
+  height: 9rem;
+}
+
+.form input:focus {
+  border: 1px solid #6809CE;
+}
+
+.form textarea:focus {
+  border: 1px solid #7B00FF;
+}
+
+.form button {
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  height: 3rem;
+  background-color: #7B00FF;
+}
+
+.form button:hover {
+  background-color: #6001C6;
+}
+
+.form .messageBox {
+  position: absolute;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #C6C6C9;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  display: none;
+}
+
+.messageBox i {
+  color: lawngreen;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #121212;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer a,div,span{
+  margin: 0.5rem 0 0 0;
+}
+footer .name {
+  color: #7B00FF;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer .nav {
+  display: flex;
+  gap: 1rem;
+}
+
+footer i {
+  font-size: 1.1rem;
+  margin: 0 1rem;
+}
+
+.fa-bars,
+.fa-times {
+  display: none;
+}
+
+.sectionH1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.sectionP {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #C5C5C5;
+}
+
+@media (max-width: 700px) {
+  .fa-bars {
+    display: inline;
+  }
+
+  nav ul {
+    background: #42445A;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 0rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    overflow: hidden;
+    background: #16002D;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+    margin: 0.5rem;
+    align-self: center;
+  }
+
+  .aboutSection {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 0;
+    padding-top: 3rem;
+  }
+
+  .aboutSection .left {
+    width: 94%;
+    text-align: center;
+  }
+
+  .aboutSection .left h1 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .aboutSection .left h2 {
+    font-size: 1.2rem;
+  }
+
+  .sectionP {
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  .sectionH1 {
+    font-size: 1.5rem;
+  }
+  .sectionP{
+    font-size: 0.9rem;
+  }
+  .skillBox h2{
+    font-size: 1.5rem;
+  }
+  .form h1{
+    font-size: 1.5rem;
+  }
+  .projectsSection{
+    padding-bottom: 0;
+  }
+  footer{
+    font-size: 0.8rem;
+    padding: 0.5rem 0 0.5rem 0in;   
+  }
+  footer a,div,span{
+  margin: 0.7rem 0 0 0;
+}
+}
