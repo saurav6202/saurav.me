@@ -5,7 +5,7 @@ const projects = [
     date: "12 October 2024",
     description: "SonixPlay is a music app where you can hear beautiful songs. It is very much similar to Spotify app.",
     codeURL: "https://github.com/WebCoder346/saurav-app/",
-    demoURL: "https://webcoder346.github.io/saurav-app/"
+    demoURL: "https://webcoder346.github.io/saurav-app/",
   },
   {
     img: "project1.jpeg",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     img: "project4.jpeg",
-    title: "QRGenerator",
+    title: "QR Generator",
     date: "31 December 2025",
     description: "In this you can create QR code simply by writing text you want to convert in QR Code.",
     codeURL: "https://github.com/WebCoder346/QRGenerator/",
