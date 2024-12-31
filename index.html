@@ -31,7 +31,7 @@
 
         <div class="left">
           <h1><span style="display: block;">Hi, I am </span>Saurav Kumar</h1>
-          <h2 style="margin: 1rem 0;">I am a <span style="color:#7B00FF;">Software developer</span></h2>
+          <h2 style="margin: 1rem 0;">I am a <span class="auto-type" style="color:#7B00FF;"></span></h2>
           <p style="font-size: 1rem; color:#C5C5C5; margin-top: 0.8rem;">I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
         </div>
         <div class="right">
@@ -113,6 +113,15 @@
   </div>
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Programmer", "Software Developer"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    })
+  </script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwSUPgMH8_yWT7sIbVsFQlR1buChYL8bqixfKAUE0t_AXy2WuShZYeD79Hp95rGJvF6/exec'
     const form = document.forms['submit-to-google-sheet']
