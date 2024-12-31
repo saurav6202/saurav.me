@@ -22,6 +22,7 @@ const projects = [
     description: "In this you can create QR code simply by writing text you want to convert in QR Code.",
     codeURL: "https://github.com/WebCoder346/QRGenerator/",
     demoURL: "https://webcoder346.github.io/QRGenerator/",
+  },
   {
     img: "project2.jpeg",
     title: "Calculator",
