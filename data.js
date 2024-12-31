@@ -16,6 +16,13 @@ const projects = [
     demoURL: "https://webcoder346.github.io/currencyConverter/",
   },
   {
+    img: "project4.jpeg",
+    title: "QRGenerator",
+    date: "31 December 2025",
+    description: "In this you can create QR code simply by writing text you want to convert in QR Code.",
+    codeURL: "https://github.com/WebCoder346/QRGenerator/",
+    demoURL: "https://webcoder346.github.io/QRGenerator/",
+  {
     img: "project2.jpeg",
     title: "Calculator",
     date: "8 January 2024",
