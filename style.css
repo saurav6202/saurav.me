@@ -17,15 +17,18 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #11111A;
-  /* background: linear-gradient(to bottom right,#11111A , #1B0038 10%,#14253D, #050D18); */
   z-index: -1;
-
 }
 
 .body {
-
+   scrollbar-width: none;
+  -ms-overflow-style: none;
   background: linear-gradient(to bottom right, #1B0038 5%, #14253D, #050D18);
   overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
